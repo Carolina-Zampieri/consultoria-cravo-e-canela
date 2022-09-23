@@ -120,6 +120,7 @@ input[type="checkbox"]{
 }
 
 .container-registro{    
+    border-color:#5b3c1c;
     width: 100%;
     background-color: #fff;
     padding: 25px 30px;
@@ -133,22 +134,18 @@ input[type="checkbox"]{
     position: relative;
 }
 
-.container-registro .title::before{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 3px;
-    width: 30px;
-    border-radius: 5px;
-    background: linear-gradient(135deg, #5b3c1c, #a57546);
+.container-form{
+    width: 50%;
+    margin: 40px 0;
+    border: 1px solid #5b3c1c;
+    padding: 20px;
+    border-radius: 35px;
 }
 
 .content form .user-details{
     display: flex;  
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 20px 0 12px 0;
 }
 
 form .user-details .input-box{
