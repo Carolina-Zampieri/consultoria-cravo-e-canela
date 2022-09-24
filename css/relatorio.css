@@ -119,7 +119,7 @@ input[type="checkbox"]{
     }
 }
 
-.container-registro{    
+.container-relatorio{    
     border-color:#5b3c1c;
     width: 100%;
     background-color: #fff;
@@ -133,7 +133,7 @@ input[type="checkbox"]{
     align-items: center;
 }
 
-.container-registro .title{
+.container-relatorio .title{
     font-size: 25px;
     font-weight: 500;
     position: relative;
