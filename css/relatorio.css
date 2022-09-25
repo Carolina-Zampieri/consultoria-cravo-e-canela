@@ -8,15 +8,17 @@
   font-family: 'Glory', sans-serif;
 } 
 
-nav{
-  display: flex;
-  height: 80px;
-  width: 100%;
-  background: #5b3c1c;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px 0 100px;
-  flex-wrap: wrap;
+.container__header {
+    background: #5B3C1C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 0 100px;
+    height: 80px;
+}
+
+.container-logo{
+    width: 250px;
 }
 
 nav ul{
@@ -60,12 +62,22 @@ input[type="checkbox"]{
 }
 
 @media (max-width: 1000px){
+
+    .container-logo{
+        width: 160px;
+    }
+
     nav{
         padding: 0 40px 0 50px;
     }
 }
 
 @media (max-width: 920px) {
+
+    .container-logo{
+        width: 250px;
+    }
+
     nav .menu-btn i{
         display: block;
     }
@@ -111,20 +123,21 @@ input[type="checkbox"]{
         background: none;
         color: #ECD7A8;
     }
-}
+} 
 
 .container-relatorio{    
     border-color:#5b3c1c;
     width: 100%;
     background-color: #fff;
-    padding: 25px 30px;
+    padding: 25px 0;
     border-radius: 5px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.15);
     height:100vh;
-    display: flex;
+    display:inline-flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
 }
 
 .container-relatorio .title{
@@ -135,7 +148,7 @@ input[type="checkbox"]{
 }
 
 .container-form{
-    width: 50%;
+    width: 80%;
     margin: 40px 0;
     border: 1px solid #5b3c1c;
     padding: 20px;
@@ -150,7 +163,7 @@ input[type="checkbox"]{
 
 form .user-details .input-box{
     margin-bottom: 15px;
-    width: calc(100% / 2 - 20px);
+    width: calc(100% / 3 - 20px);
 }
 
 form .input-box span.details{
@@ -183,7 +196,7 @@ form .gender-details .gender-title{
 
 form .category{
     display: flex;
-    width: 80%;
+    width: 100%;
     margin: 14px 0 ;
     justify-content: space-between;
 }
@@ -233,7 +246,7 @@ form .button input{
     transition: all 0.3s ease;
     background: #5b3c1c;
     margin: 5px 10px;
-}
+} 
 
 form .button input:hover{
     /* transform: scale(0.99); */
@@ -242,6 +255,11 @@ form .button input:hover{
 }
 
 @media(max-width: 584px){
+
+    .container-logo{
+        width: 200px;
+    }
+
     .container{
     max-width: 100%;
 }
@@ -256,7 +274,7 @@ form .category{
 }
 
 .content form .user-details{
-    max-height: 300px;
+    max-height: 400px;
     overflow-y: scroll;
 }
 
