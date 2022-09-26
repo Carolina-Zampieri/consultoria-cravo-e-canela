@@ -8,6 +8,10 @@
   font-family: 'Glory', sans-serif;
 } 
 
+body{
+    display: inline-table;
+}
+
 .container-relatorio{    
     border-color:#5b3c1c;
     width: 100%;
@@ -165,7 +169,7 @@ form .category{
    }
 }
 
-@media(max-width: 459px){
+@media(max-width: 459px){  
     .container .content .category{
         flex-direction: column;
     }
