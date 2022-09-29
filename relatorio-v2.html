@@ -31,7 +31,7 @@
 
                 <ul>
                     <li><a href="home.html">Home</a></li>
-                    <li><a href="cadastroCliente.html">Cadastro de Cliente</a></li>
+                    <li><a href="cadastroCliente.html">Cadastro Cliente</a></li>
                     <li><a href="registroViagens.html">Registro de Viagens</a></li>
                     <li><a class="active" href="relatorio.html">Relatório</a></li>
                     <li><a href="index.html"><ion-icon name="log-out-outline"></ion-icon></a></li>
@@ -39,7 +39,7 @@
             </nav>
 
         </header>
-            
+          
         <div class="container-relatorio">
                 
             <div class="container-form">
@@ -47,37 +47,56 @@
                 <div class="title">Relatório</div>
 
                 <div class="content">
-                    <form action="#">
+                    <form id="form" action="#">
                         <div class="user-details">
 
                         <div class="input-box">
                             <span class="details">Nome</span>
-                            <input type="text" placeholder="Digite o nome" required>
+                            <input id="nome" type="text" placeholder="Digite o nome do cliente" >
                         </div>
-
+                                
                         <div class="input-box">
                             <span class="details">Cidade</span>
-                            <input type="text" placeholder="Digite a cidade" required>
+                            <input id="cidade" type="text" placeholder="Digite a cidade" >
                         </div>
-                            
+
                         <div class="input-box">
                             <span class="details">Estado</span>
-                            <input type="text" placeholder="Digite o Estado" required>
+                            <input id="estado" type="text" placeholder="Digite o estado nome" >
+                        </div>
+
+                        
+                        <div class="button">
+                            <input class="button" type="submit" value="Filtrar">
                         </div>
 
                         <div class="button">
-                            <input claas="button" type="submit" value="Filtrar">
-                        </div>
-
-                        <div class="button">
-                            <input class="button" type="submit" value="Limpar">
+                            <input class="button" onclick="limparCampos()" value="Limpar">
                         </div>
                     </div>    
                 </form>
             </div>
+           
         </div>
+           
+        <div class="">
+            <p id="showData"></p>
+        </div> 
+
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-        <script class="relatorio-js" src="./js/relatorio-v2.js" defer></script>
+        <script src="./js/relatorio-v2.js" defer></script>
+        <style>
+            table, th, td {
+                border: solid 1px #ddd;
+                border-collapse: collapse;
+                padding: 2px 3px;
+                text-align: center;
+            }
+
+            th { 
+                font-weight:bold;
+            }
+        </style>
     </body>
 </html>
